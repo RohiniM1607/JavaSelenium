@@ -1,4 +1,4 @@
-package com.selenium.Selenium_Basics;
+package com.selenium.Selenium_Basics.ActionClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionClassDemo {
+public class ActionClassDemo2 {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
@@ -14,10 +14,8 @@ public class ActionClassDemo {
 		driver.get("https://omayo.blogspot.com/");
 		WebElement blogsmenuElement = driver.findElement(By.id("blogsmenu"));
 		Actions action = new Actions(driver);
-		action.moveToElement(blogsmenuElement).perform();
-		WebElement Option2 = driver.findElement(By.xpath("//a[span[text()='SeleniumByArun']]"));
-		action.moveToElement(Option2).click().build().perform();
-		
+		WebElement searchfield = driver.findElement(By.xpath("//td[@class='gsc-input']/input"));
+		action.contextClick(searchfield).perform();
 	}
 
 }
