@@ -1,4 +1,4 @@
-package com.selenium.Selenium_Basics;
+package com.selenium.Selenium_Basics.MultipleWindowHandle;
 
 import java.time.Duration;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.selenium.Selenium_Basics;
+package com.selenium.Selenium_Basics.Waits;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
